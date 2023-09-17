@@ -1,4 +1,4 @@
-package StringExercises;
+package stringexercises;
 
 public class StringExerciseWithRegex {
     public static void main(String[] args) {
@@ -18,18 +18,10 @@ public class StringExerciseWithRegex {
     }
 
     static boolean isValidEAN13(String text) {
-        if (text.matches("[A-Z]{3}[0-9]{2}")) {
-            return true;
-        } else {
-            return false;
-        }
+        return text.matches("[A-Z]{3}[0-9]{2}");
     }
 
     static boolean isValidItalianPhoneNumber(String input) {
-        if (input.matches(".[1-9]{10}")) {
-            return true;
-        } else {
-            return false;
-        }
+        return input.matches(".[1-9]{10}");
     }
 }

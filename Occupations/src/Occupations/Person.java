@@ -26,7 +26,7 @@ public class Person {
     }
 
     void introduce() {
-        System.out.printf("Hi, my name is %s. I'm %d. I'm a %s.%n",name,age,gender);
+        System.out.printf("Hi, my name is %s. I'm %d. I'm a %s.%n", name, age, gender);
     }
 
     void printGoal() {

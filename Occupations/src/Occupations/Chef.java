@@ -12,10 +12,10 @@ public class Chef extends Person {
     @Override
     public void introduce() {
         super.introduce();
-        System.out.printf("Hi, my name is %s. I'm %d. I'm a %s and a chef.%n",name,age,gender);
+        System.out.printf("Hi, my name is %s. I'm %d. I'm a %s and a chef.%n", name, age, gender);
     }
 
     void cook(String food) {
-        System.out.printf("%s has cooked some %s.%n",name,food);
+        System.out.printf("%s has cooked some %s.%n", name, food);
     }
 }

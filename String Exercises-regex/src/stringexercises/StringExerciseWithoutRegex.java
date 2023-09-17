@@ -1,4 +1,4 @@
-package StringExercises;
+package stringexercises;
 
 public class StringExerciseWithoutRegex {
     public static void main(String[] args) {
