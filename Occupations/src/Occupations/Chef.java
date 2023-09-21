@@ -1,9 +1,6 @@
 package Occupations;
 
 public class Chef extends Person {
-    public Chef() {
-        super();
-    }
 
     public Chef(String name, int age, Gender gender) {
         super(name, age, gender);
