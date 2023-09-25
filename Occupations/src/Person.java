@@ -1,14 +1,9 @@
-package Occupations;
+import Gender.Gender;
 
 public class Person {
     String name;
     int age;
     Gender gender;
-
-
-    public Person() {
-
-    }
 
     @Override
     public String toString() {
@@ -20,13 +15,14 @@ public class Person {
     }
 
     public Person(String name, int age, Gender gender) {
-        this.age = age;
         this.name = name;
+        this.age = age;
         this.gender = gender;
     }
 
+
     void introduce() {
-        System.out.printf("Hi, my name is %s. I'm %d. I'm a %s.%n", name, age, gender);
+        System.out.printf("Hi, my name is %s. I am %d. I am a %s.%n", name, age, gender);
     }
 
     void printGoal() {
