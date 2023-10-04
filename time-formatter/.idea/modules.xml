@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/timeFormer.iml" filepath="$PROJECT_DIR$/timeFormer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/time-formatter.iml" filepath="$PROJECT_DIR$/time-formatter.iml" />
     </modules>
   </component>
 </project>

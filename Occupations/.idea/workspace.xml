@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acdc45f0-daff-4c5e-83dd-5f9ed4ff4cf7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Animals/Animals.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/occupations.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/occupations/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/occupations/Chef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/occupations/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/occupations/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/occupations/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/occupations/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="acdc45f0-daff-4c5e-83dd-5f9ed4ff4cf7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
