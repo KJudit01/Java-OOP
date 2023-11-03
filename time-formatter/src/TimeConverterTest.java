@@ -11,5 +11,6 @@ public class TimeConverterTest {
         Assertions.assertEquals("It is twenty-five past three.",TimeConverter.convertToWords(3,25));
         Assertions.assertEquals("It is quarter to four.",TimeConverter.convertToWords(3,45));
         Assertions.assertEquals("It is twenty to six.",TimeConverter.convertToWords(5,40));
+        Assertions.assertEquals("It is five past eight.",TimeConverter.convertToWords(8,5));
     }
 }

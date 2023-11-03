@@ -30,7 +30,7 @@ public class TimeConverter {
                 return "It is " + numbers[minute] + " past " + numbers[hour] + ".";
             }
         } else if (minute < 30) {
-            return "It is twenty-" + numbers[minute - 20] + " past " + numbers[hour] + ".";
+            return "It is twenty" + numbers[minute - 20] + " past " + numbers[hour] + ".";
         } else {
             int remainingMinutes = 60 - minute;
             if (remainingMinutes == 15) {
