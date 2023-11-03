@@ -1,8 +1,13 @@
 public class CherryTree extends Tree{
+    public CherryTree(String name, int age, int height){
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
 
     @Override
     String getDescription() {
-        return "It is a cherry tree with green leaves. It is a " + this.name + "which is " + this.age + " and " + this.height + " cms tall.";
+        return "It is a cherry tree with green leaves. Its name is " + this.name + " which is " + this.age + " years old and " + this.height + " meters.";
     }
 
     @Override
@@ -12,6 +17,6 @@ public class CherryTree extends Tree{
 
     @Override
     void bloom() {
-        System.out.printf("%s virágzik",this.getHungarianName());
+        System.out.printf("Egy %s virágzik.",this.getHungarianName());
     }
 }

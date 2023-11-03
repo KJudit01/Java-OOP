@@ -7,7 +7,7 @@ public class PineTree extends Tree{
 
     @Override
    public String getDescription(){
-        return "It is a pine tree with spiky leaves. It is a " + this.name + "which is " + this.age + " and " + this.height + " cms tall.";
+        return "It is a pine tree with spiky leaves. Its name is " + this.name + " which is " + this.age + " years old and " + this.height + " meters.";
     }
     @Override
     public String getHungarianName(){
@@ -15,6 +15,6 @@ public class PineTree extends Tree{
     }
     @Override
     public void bloom(){
-        System.out.printf("%s virágzik.",this.getHungarianName());
+        System.out.printf("Egy %s virágzik.",this.getHungarianName());
     }
 }
