@@ -53,7 +53,7 @@ public class StringExerciseWithRegex {
     }
 
     public static boolean isSpecialCode(String code) {
-        String pattern = "^[^0-9]{3}[A-Z]{2}[A-Za-z]{2}\\d[1-5].{5}\\.$";
+        String pattern = "[^0-9]{3}[A-Z]{2}[A-Za-z]{2}\\d[1-5].{5}\\.";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(code);
         return matcher.matches();

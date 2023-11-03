@@ -34,7 +34,7 @@ public class StringExerciseWithoutRegex {
             System.out.println("NO");
         }
         System.out.println("Task 4");
-        String code1 = "ABCXYz3abcde.";
+        String code1 = "ABCCDef43kjh21.";
         String code2 = "123XYz3abcde.";
         String code3 = "ABCD1E23FGH.";
         if (isSpecialCode(code1)) {
@@ -83,10 +83,10 @@ public class StringExerciseWithoutRegex {
     }
 
     public static boolean isSpecialCode(String code) {
-        if (code.length() != 11) {
+        if (code.length() != 15) {
             return false;
         }
-        for (int i = 0; i < 3; i++) {
+        for (int i = 1; i < 3; i++) {
             if (Character.isDigit(code.charAt(i))) {
                 return false;
             }
@@ -105,10 +105,10 @@ public class StringExerciseWithoutRegex {
             return false;
         }
         char digitCharacter = code.charAt(8);
-        if (digitCharacter < 1 || digitCharacter > 5) {
+        if (digitCharacter < '1' || digitCharacter > '5') {
             return false;
         }
-        if (code.charAt(10) != '.') {
+        if (code.charAt(14) != '.') {
             return false;
         }
         return true;

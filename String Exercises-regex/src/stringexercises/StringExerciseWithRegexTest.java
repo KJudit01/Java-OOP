@@ -47,6 +47,8 @@ public class StringExerciseWithRegexTest {
         Assertions.assertFalse(StringExerciseWithRegex.isSpecialCode("ABCXYz3abcde."));
         Assertions.assertFalse(StringExerciseWithRegex.isSpecialCode("1ABCD1E23FGH."));
         Assertions.assertFalse(StringExerciseWithRegex.isSpecialCode("ABCD1E23FGH."));
+        Assertions.assertTrue(StringExerciseWithRegex.isSpecialCode("ABCCDef43kjh21."));
+        Assertions.assertTrue(StringExerciseWithRegex.isSpecialCode("ABCDAbC12kjh21."));
     }
 
     @Test
@@ -55,6 +57,8 @@ public class StringExerciseWithRegexTest {
         Assertions.assertFalse(StringExerciseWithoutRegex.isSpecialCode("1ABCD1E23FGH."));
         Assertions.assertFalse(StringExerciseWithoutRegex.isSpecialCode("ABCD1E23FGH."));
         Assertions.assertFalse(StringExerciseWithoutRegex.isSpecialCode("ABCe3x7456."));
+        Assertions.assertTrue(StringExerciseWithoutRegex.isSpecialCode("ABCCDef43kjh21."));
+        Assertions.assertTrue(StringExerciseWithoutRegex.isSpecialCode("ABCDAbC12kjh21."));
     }
 }
 
