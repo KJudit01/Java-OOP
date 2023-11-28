@@ -1,9 +1,9 @@
 public class Erastothenes {
     public static void main(String[] args) {
         int limit = 1000;
-        int[] primes = generatePrimes(limit);
-        int sum = calculateSumOfPrimes(primes);
-        System.out.println("The sum of the first 1000 primes is: " + sum);
+       // int[] primes = generatePrimes(limit);
+       // int sum = calculateSumOfPrimes(primes);
+       // System.out.println("The sum of the first 1000 primes is: " + sum);
     }
 
     private static int[] calculateSumOfPrimes(int number) {
