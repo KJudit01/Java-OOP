@@ -31,7 +31,6 @@ public class BookStore {
 
             result.append(genreBooks.size()).append(" pieces ").append(genre).append(" which are ").append(rentableGenreBooks).append(" available.\n");
         }
-
         return result.toString();
     }
 }

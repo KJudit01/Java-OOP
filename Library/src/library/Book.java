@@ -9,15 +9,16 @@ public class Book {
     private Genre genre;
     private boolean isRentable;
 
-    public Book(int serialNumber,String author, String title, Genre genre, boolean isRentable){
+    public Book(int serialNumber, String author, String title, Genre genre, boolean isRentable) {
         this.serialNumber = serialNumber;
         this.author = author;
         this.title = title;
         this.genre = genre;
         this.isRentable = isRentable;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         String rentability = isRentable ? "available" : "not available";
         return "The author of the book is " + author + ", the title " + title + ", its genre " + genre + ", and currently " + rentability + ".";
     }
@@ -40,11 +41,14 @@ public class Book {
         return book.isRentable;
     }
 
-    public static <G, B extends Book> G getGenre(B book) {
+    public static <G> Genre getGenre(Book book) {
         if (book instanceof Book) {
-            G genre = (G) book.getGenre();
-            return genre;
+            return ((Book) book).getGenre();
         }
         return null;
+    }
+
+    private <G> Genre getGenre() {
+        return genre;
     }
 }
