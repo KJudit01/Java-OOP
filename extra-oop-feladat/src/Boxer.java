@@ -45,11 +45,13 @@ public class Boxer {
 
     @Override
     public String toString() {
-        return "+-------------------------------+\n" +
-                "| Név:         " + this.name + "    |\n" +
-                "| Kor:         " + this.age + "     |\n" +
-                "| Győzelmek:   " + this.wins + "    |\n" +
-                "+------------------------------+";
+        return String.format(
+                "+-------------------------------+%n" +
+                        "| Name:        %-16s |%n" +
+                        "| Age:         %-16d |%n" +
+                        "| Wins:        %-16d |%n" +
+                        "+-------------------------------+",
+                this.name, this.age, this.wins);
     }
 
     public void increasePower(int amount) {
