@@ -7,14 +7,6 @@ public class Customer {
         this.accountNumber = accountNumber;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
     public void buyTicket(Ticket ticket) {
         ticket.sellTicket();
     }
@@ -25,9 +17,11 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "+--------------------------------+\n" +
-                "| Name:            " + name + " |\n" +
-                "| Account no:      " + accountNumber + " |\n" +
-                "+-------------------------------+";
+        return String.format(
+                "+-------------------------------+%n" +
+                        "| Name:        %-16s |%n" +
+                        "| Account No:  %-16s |%n" +
+                        "+-------------------------------+",
+                this.name, this.accountNumber);
     }
 }

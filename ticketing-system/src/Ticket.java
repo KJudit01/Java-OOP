@@ -19,10 +19,11 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "+-----------------------+\n" +
-                "| Type:      " + type + "      |\n" +
-                "| Price:     " + price + "      |\n" +
-                "| State:     " + status + "    |\n" +
-                "+-----------------------+";
+        return String.format("+-------------------------------+%n" +
+                        "| Type:          %-16s |%n" +
+                        "| Price:         %-16.2f |%n" +
+                        "| Status:        %-16s |%n" +
+                        "+-------------------------------+",
+                this.type, this.price, this.status);
     }
 }

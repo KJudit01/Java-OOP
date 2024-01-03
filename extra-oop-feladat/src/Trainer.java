@@ -9,19 +9,12 @@ public class Trainer {
         this.experience = experience;
     }
 
+
     public void trainBoxer(Boxer boxer) {
-        boxer.increasePower(experience);
+        boxer.increasePower(this.experience);
     }
 
     public void heal(Boxer boxer) {
         boxer.heal(20);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getExperience() {
-        return experience;
     }
 }

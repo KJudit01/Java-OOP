@@ -14,8 +14,10 @@ public class Boxer {
     }
 
     public void hit(Boxer opponent) {
-        opponent.hitPoints -= this.power;
-        System.out.println("The boxer called " + this.name + " hit the boxer called " + opponent.name + " with a power of " + this.power + ", leaving the latter with " + opponent.hitPoints + " hit points after the hit.");
+        if (this.hitPoints > 0) {
+            opponent.hitPoints -= this.power;
+            System.out.println(this.name + " with power " + this.power + " hit " + opponent.name + ", leaving them with " + opponent.hitPoints + " hit points.");
+        }
     }
 
     public int getWins() {
@@ -28,18 +30,21 @@ public class Boxer {
 
     public void fight(Boxer opponent) {
         if (this.hitPoints <= 0) {
-            System.out.println("The boxer called " + this.name + " is not alive, so he cannot start the fight.");
+            System.out.printf("The boxer called %s is not alive and cannot start the fight.", this.name);
+            return;
         }
         while (this.hitPoints > 0 && opponent.hitPoints > 0) {
             this.hit(opponent);
+            if (opponent.hitPoints > 0) {
+                opponent.hit(this);
+            }
         }
-        System.out.println("The game is over.");
         if (this.hitPoints > 0) {
-            System.out.println("The winner is " + this.name + ", the loser is " + opponent.name + ".");
             this.wins++;
+            System.out.println("Match over. Winner: " + this.name);
         } else {
-            System.out.println("The winner is " + opponent.name + ", the loser is " + this.name + ".");
             opponent.wins++;
+            System.out.println("Match over. Winner: " + opponent.name);
         }
     }
 
